@@ -3,7 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="question_text" />
+    <string name="question_one">Question One</string>
+    <string name="question_two">Question Two</string>
+    <string name="question_three">Question Three</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+
 </resources>
