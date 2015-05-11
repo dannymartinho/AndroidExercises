@@ -4,27 +4,28 @@ package geoquiz.android.dsmartinho.com.geoquiz;
  * Created by daniel.martinho on 11-05-2015.
  */
 public class TrueFalse {
-    private int mQuestionTextId;
-    private boolean mQuestionTrue;
+    private int mQuestion;
 
-    public TrueFalse(int questionTextId, boolean questionTrue) {
-        mQuestionTextId = questionTextId;
-        mQuestionTrue = questionTrue;
+    private Boolean mTrueQuestion;
+
+    public int getQuestion() {
+        return mQuestion;
     }
 
-    public int getQuestionTextId() {
-        return mQuestionTextId;
+    public void setQuestion(int question) {
+        mQuestion = question;
     }
 
-    public void setQuestionTextId(int questionTextId) {
-        mQuestionTextId = questionTextId;
+    public Boolean isTrueQuestion() {
+        return mTrueQuestion;
     }
 
-    public boolean isQuestionTrue() {
-        return mQuestionTrue;
+    public void setTrueQuestion(Boolean trueQuestion) {
+        mTrueQuestion = trueQuestion;
     }
 
-    public void setQuestionTrue(boolean questionTrue) {
-        mQuestionTrue = questionTrue;
+    public TrueFalse(int mQuestion, boolean mTrueQuestion) {
+        this.mQuestion = mQuestion;
+        this.mTrueQuestion = mTrueQuestion;
     }
 }
