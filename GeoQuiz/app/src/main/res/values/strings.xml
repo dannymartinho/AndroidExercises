@@ -9,4 +9,5 @@
     <string name="question_one">Is Android programming awesome or what!?</string>
     <string name="question_two">question2</string>
     <string name="question_three">question3</string>
+    <string name="prev_button">Prev</string>
 </resources>
