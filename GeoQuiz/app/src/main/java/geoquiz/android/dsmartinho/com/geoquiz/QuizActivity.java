@@ -7,18 +7,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class QuizActivity extends Activity {
     private static final String TAG = "QuizActivity";
+
     private Button mTrueButton;
     private Button mFalseButton;
-    private ImageView mNextButton;
-    private ImageView mPrevButton;
+    private TextView mNextButton;
+    private TextView mPrevButton;
     private TextView mQuestionTextView;
+
     private TrueFalse[] mQuestionBank = new TrueFalse[]{
             new TrueFalse(R.string.question_one, true),
             new TrueFalse(R.string.question_two, false),
@@ -49,8 +50,8 @@ public class QuizActivity extends Activity {
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mFalseButton = (Button) findViewById(R.id.false_button);
-        mNextButton = (ImageView) findViewById(R.id.next_button);
-        mPrevButton = (ImageView) findViewById(R.id.prev_button);
+        mNextButton = (TextView) findViewById(R.id.next_button);
+        mPrevButton = (TextView) findViewById(R.id.prev_button);
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
 
         mQuestionTextView.setOnClickListener(new View.OnClickListener() {
