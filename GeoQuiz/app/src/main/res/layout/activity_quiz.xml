@@ -1,19 +1,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Quiz">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".Quiz">
 
     <TextView
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,13 +24,13 @@
             android:id="@+id/true_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/true_button" />
+            android:text="@string/true_button"/>
 
         <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/false_button" />
+            android:text="@string/false_button"/>
     </LinearLayout>
 
     <LinearLayout
@@ -38,17 +38,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <ImageView
+
             android:id="@+id/prev_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/prev_button" />
+            android:padding="10dp"
+            android:src="@mipmap/arrow_left"
+            />
 
-        <Button
+        <ImageView
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next_button" />
+            android:padding="10dp"
+            android:src="@mipmap/arrow_right"
+
+            />
 
     </LinearLayout>
 
