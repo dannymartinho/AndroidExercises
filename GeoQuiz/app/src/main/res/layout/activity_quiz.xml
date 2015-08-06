@@ -38,27 +38,28 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
+        <Button
 
             android:id="@+id/prev_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@mipmap/arrow_left"
-            android:padding="10dp"
             android:text="@string/prev_button"
             />
 
-        <TextView
+        <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableRight="@mipmap/arrow_right"
-            android:padding="10dp"
             android:text="@string/next_button"
 
             />
 
     </LinearLayout>
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_button"/>
 
 
 </LinearLayout>
